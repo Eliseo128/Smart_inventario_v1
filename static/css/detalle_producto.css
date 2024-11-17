@@ -1,0 +1,125 @@
+/* Estilos globales */
+body {
+    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Estilo para la imagen del producto */
+.producto-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarjeta del producto */
+.producto-card {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos y textos */
+.producto-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.producto-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.producto-price {
+    font-size: 1.4rem;
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto-stock {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* Botón de Volver */
+.btn-back {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #3498db;
+}
+
+/* Estilo de botones de acción */
+.btn-actions a, .btn-actions button {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Mejorar la visualización en pantallas pequeñas */
+@media (max-width: 767px) {
+    .producto-card {
+        padding: 15px;
+    }
+
+    .producto-title {
+        font-size: 1.6rem;
+    }
+
+    .producto-price, .producto-stock {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,28 @@
+## inventario procedimiento
+- instalar virtualenv --> pip install virtualenv
+- crear el entorno virtual --> virtualenv .envinventario
+- Activar el entorno usar tab  -->    .\.envestudiante\Scripts\activate
+- Instalar Django --> pip install Django
+- si te lo pide ejecuta lo siguiente --> python.exe -m pip install --upgrade pip
+- ver librerias instaladas --> py -m pip freeze
+- crear proyecto, al final un espacio mas el punto
+- --> django-admin startproject backend_inventario .
+- en setting backend_estudiante establecer idioma 
+- LANGUAGE_CODE = 'es-mx'
+- crear la aplicacion --> python manage.py startapp producto_app    
+- Ejecutar servidor --> python manage.py runserver
+- en setting de backend_inventario agregar la aplicacion producto_app + directorios templates, static y media
+- creamos el modelo segun la(s) tabla(s) y registramos el modelo en producto_app admin.py
+- instalar libreria para subir imagenes --> python -m pip install Pillow
+- ver librerias instaladas  -->   py -m pip freeze
+- crear las carpetas static/css y templates/productos
+- realizamos makemigrations --> python manage.py makemigrations
+- y migrate --> python manage.py migrate
+- creamos el super usuario admin pass admin -->python manage.py createsuperuser
+- ejecutamos el servidor escribimos 127.0.0.1:8000/admin
+- se accede con admin admin (si no se ven las tablas registrar en admin.py)
+- creamos un registro en 
+- creamos la carpeta static + subcarpetas css y js en la aplicacion con sus respectivos archivos
+- en templates creamos el archivo base.html
+- visitamos la pagina bootstrap 5 obtenemos link de css y js
+- en bootstrap obtenemos ejemplo de barra de navegacion simple
